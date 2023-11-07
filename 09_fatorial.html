@@ -5,11 +5,16 @@
     */
 
     //Entrada
-
+    let numero = Number(prompt(`Informe um número:`));
 
     //Processamento
-
-
-    //Saída
+    function fatorial(numero) {
+    if (numero == 1) {
+        return 1;
+    } else {
+        return numero * fatorial(numero - 1);
+        }
+    }
+   fatorial();
 
 </script>
