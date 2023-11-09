@@ -7,7 +7,19 @@
     */
 
     //Entrada
-
+    let palavra = prompt(`Insira uma palavra:`).toUpperCase();
+    
+    function contador(palavra){
+        let contagem = 0;
+        for(l of palavra){
+            if(l == "A" || l == "E" || l == "I" || l == "O" || l == "U"){
+                contagem ++
+            }
+        }
+        return(contagem);
+    }
+    
+    document.write(`A palavra "${palavra}" contem ${contador(palavra)} vogais`);
 
     //Processamento
 
