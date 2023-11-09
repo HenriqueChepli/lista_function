@@ -5,7 +5,13 @@
     */
 
     //Entrada
-
+    let number = Number(prompt(`Insira um numero`));
+    
+    function verificador(number){
+        (number % 2 == 0) ? return("par") : return("impar");
+    }
+    
+    document.write(`Este numero é ${verificador(number)}`);
 
     //Processamento
 
